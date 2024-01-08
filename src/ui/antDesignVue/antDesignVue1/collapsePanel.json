@@ -1,0 +1,51 @@
+{
+  "name": "ACollapsePanel",
+  "props": {
+    "disabled": {
+      "default": "false",
+      "value": "",
+      "type": "boolean",
+      "description": "If true, panel cannot be opened or closed",
+      "description_zh": "禁用后的面板展开与否将无法通过用户交互改变"
+    },
+    "forceRender": {
+      "default": "false",
+      "value": "",
+      "type": "boolean",
+      "description": "Forced render of content on panel, instead of lazy rending after clicking on header",
+      "description_zh": "被隐藏时是否渲染 DOM 结构"
+    },
+    "header": {
+      "default": "无",
+      "value": "",
+      "type": "string|slot",
+      "description": "Title of the panel",
+      "description_zh": "面板头内容"
+    },
+    ":key": {
+      "default": "无",
+      "value": "",
+      "type": "string",
+      "description": "Unique key identifying the panel from among its siblings",
+      "description_zh": "对应 activeKey"
+    },
+    "showArrow": {
+      "default": "true",
+      "value": "",
+      "type": "boolean",
+      "description": "If false, panel will not show arrow icon",
+      "description_zh": "是否展示当前面板上的箭头"
+    },
+    ":extra": {
+      "default": "-",
+      "value": "",
+      "type": "VNode | slot",
+      "description": "extra element in the corner",
+      "description_zh": "自定义渲染每个面板右上角的内容"
+    }
+  },
+  "methods": [],
+  "events": [],
+  "link": "https://1x.antdv.com/components/collapse",
+  "link_zh": "https://1x.antdv.com/components/collapse-cn"
+}

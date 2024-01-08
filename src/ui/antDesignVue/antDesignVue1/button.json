@@ -1,0 +1,90 @@
+{
+  "name": "AButton",
+  "props": {
+    "disabled": {
+      "default": "false",
+      "value": "",
+      "type": "boolean",
+      "description": "disabled state of button",
+      "description_zh": "按钮失效状态"
+    },
+    "ghost": {
+      "default": "false",
+      "value": "",
+      "type": "boolean",
+      "description": "make background transparent and invert text and border colors, added in 2.7",
+      "description_zh": "幽灵属性，使按钮背景透明"
+    },
+    "htmlType": {
+      "default": "button",
+      "value": "",
+      "type": "string",
+      "description": "set the original html type of button, see: MDN",
+      "description_zh": "设置 button 原生的 type 值，可选值请参考 HTML 标准"
+    },
+    "icon": {
+      "default": "-",
+      "value": "",
+      "type": "string",
+      "description": "set the icon of button, see: Icon component",
+      "description_zh": "设置按钮的图标类型"
+    },
+    "loading": {
+      "default": "false",
+      "value": "",
+      "type": "boolean | { delay: number }",
+      "description": "set the loading status of button",
+      "description_zh": "设置按钮载入状态"
+    },
+    "shape": {
+      "default": "-",
+      "value": [
+        "circle",
+        "round"
+      ],
+      "type": "string",
+      "description": "can be set to circle, round or omitted",
+      "description_zh": "设置按钮形状，可选值为 `circle`、 `round` 或者不设"
+    },
+    "size": {
+      "default": "default",
+      "value": [
+        "small",
+        "large"
+      ],
+      "type": "string",
+      "description": "can be set to small large or omitted",
+      "description_zh": "设置按钮大小，可选值为 small large 或者不设"
+    },
+    "type": {
+      "default": "default",
+      "value": [
+        "primary",
+        "dashed",
+        "danger",
+        "link"
+      ],
+      "type": "string",
+      "description": "can be set to primary ghost dashed danger link or omitted (meaning default)",
+      "description_zh": "设置按钮类型，可选值为 `primary` `dashed` `danger` `link` 或者不设"
+    },
+    "block": {
+      "default": "false",
+      "value": "",
+      "type": "boolean",
+      "description": "option to fit button width to its parent width",
+      "description_zh": "将按钮宽度调整为其父宽度的选项"
+    }
+  },
+  "methods": [],
+  "events": [
+    {
+      "name": "click",
+      "description": "set the handler to handle click event",
+      "params": "(event) => void",
+      "description_zh": "点击按钮时的回调"
+    }
+  ],
+  "link": "https://1x.antdv.com/components/button",
+  "link_zh": "https://1x.antdv.com/components/button-cn"
+}

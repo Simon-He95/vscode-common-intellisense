@@ -1,0 +1,93 @@
+{
+  "name": "ACol",
+  "props": {
+    "flex": {
+      "value": "",
+      "description": "the layout fill of flex",
+      "default": "-",
+      "type": "string | number",
+      "description_zh": "flex 布局填充"
+    },
+    ":offset": {
+      "value": "",
+      "description": "the number of cells to offset Col from the left",
+      "default": "0",
+      "type": "number",
+      "description_zh": "栅格左侧的间隔格数，间隔内不可以有栅格"
+    },
+    ":order": {
+      "value": "",
+      "description": "raster order, used in flex layout mode",
+      "default": "0",
+      "type": "number",
+      "description_zh": "栅格顺序，`flex` 布局模式下有效"
+    },
+    ":pull": {
+      "value": "",
+      "description": "the number of cells that raster is moved to the left",
+      "default": "0",
+      "type": "number",
+      "description_zh": "栅格向左移动格数"
+    },
+    ":push": {
+      "value": "",
+      "description": "the number of cells that raster is moved to the right",
+      "default": "0",
+      "type": "number",
+      "description_zh": "栅格向右移动格数"
+    },
+    ":span": {
+      "value": "",
+      "description": "raster number of cells to occupy, 0 corresponds to display: none",
+      "default": "-",
+      "type": "number",
+      "description_zh": "栅格占位格数，为 0 时相当于 `display: none`"
+    },
+    ":xs": {
+      "value": "",
+      "description": "'<576px' is a responsive raster, which can be a number of rasters or an object with additional attributes",
+      "default": "-",
+      "type": "number | object",
+      "description_zh": "`<576px` 响应式栅格，可为栅格数或一个包含其他属性的对象"
+    },
+    ":sm": {
+      "value": "",
+      "description": "'≥576px' is a responsive raster, which can be a number of rasters or an object with additional attributes",
+      "default": "-",
+      "type": "number | object",
+      "description_zh": "`≥576px` 响应式栅格，可为栅格数或一个包含其他属性的对象"
+    },
+    ":md": {
+      "value": "",
+      "description": "'≥768px' responsive raster, which can be a number of rasters or an object with additional attributes",
+      "default": "-",
+      "type": "number | object",
+      "description_zh": "`≥768px` 响应式栅格，可为栅格数或一个包含其他属性的对象"
+    },
+    ":lg": {
+      "value": "",
+      "description": "'≥992px' responsive raster, which can be a number of rasters or an object with additional attributes",
+      "default": "-",
+      "type": "number | object",
+      "description_zh": "`≥992px` 响应式栅格，可为栅格数或一个包含其他属性的对象"
+    },
+    ":xl": {
+      "value": "",
+      "description": "≥1200px' responsive raster, which can be a number of rasters or an object with additional attributes",
+      "default": "-",
+      "type": "number | object",
+      "description_zh": "`≥1200px` 响应式栅格，可为栅格数或一个包含其他属性的对象"
+    },
+    ":xxl": {
+      "value": "",
+      "description": "'≥1600px' responsive raster, which can be a number of rasters or an object with additional attributes",
+      "default": "-",
+      "type": "number | object",
+      "description_zh": "`≥1600px` 响应式栅格，可为栅格数或一个包含其他属性的对象"
+    }
+  },
+  "methods": [],
+  "events": [],
+  "link": "https://1x.antdv.com/components/grid",
+  "link_zh": "https://1x.antdv.com/components/grid-cn"
+}

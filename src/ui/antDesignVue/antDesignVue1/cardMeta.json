@@ -1,0 +1,31 @@
+{
+  "name": "ACardMeta",
+  "props": {
+    ":avatar": {
+      "value": "",
+      "description": "avatar or icon",
+      "default": "-",
+      "type": "slot",
+      "description_zh": "头像/图标"
+    },
+    "description": {
+      "value": "",
+      "description": "description content",
+      "default": "-",
+      "type": "string | slot",
+      "description_zh": "描述内容"
+    },
+    "title": {
+      "value": "",
+      "description": "Title content",
+      "default": "-",
+      "type": "string | slot",
+      "description_zh": "标题内容",
+      "required": true
+    }
+  },
+  "methods": [],
+  "events": [],
+  "link": "https://1x.antdv.com/components/card",
+  "link_zh": "https://1x.antdv.com/components/card-cn"
+}

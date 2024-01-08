@@ -1,0 +1,45 @@
+{
+  "name": "ABreadcrumb",
+  "props": {
+    "itemRender": {
+      "default": "-",
+      "value": "",
+      "type": "({route, params, routes, paths, h}) => vNode",
+      "description": "Custom item renderer, slot=\"itemRender\" and slot-scope=\"{route, params, routes, paths}\"",
+      "description_zh": "自定义链接函数，和 vue-router 配置使用， 也可使用 slot=\"itemRender\" 和 slot-scope=\"props\""
+    },
+    ":params": {
+      "default": "-",
+      "value": "",
+      "type": "object",
+      "description": "Routing parameters",
+      "description_zh": "路由的参数"
+    },
+    "routes": {
+      "default": "-",
+      "value": "",
+      "type": "routes[]",
+      "description": "The routing stack information of router",
+      "description_zh": "router 的路由栈信息"
+    },
+    "separator": {
+      "default": "/",
+      "value": "",
+      "type": "string|slot",
+      "description": "Custom separator",
+      "description_zh": "分隔符自定义"
+    }
+  },
+  "methods": [],
+  "events": [
+    {
+      "name": "click",
+      "description": "Click Events",
+      "params": "(e:MouseEvent)=>void",
+      "description_zh": "单击事件"
+    }
+  ],
+  "suggestions": ["a-breadcrumb-item", "a-breadcrumb-separator"],
+  "link": "https://1x.antdv.com/components/breadcrumb",
+  "link_zh": "https://1x.antdv.com/components/breadcrumb-cn"
+}

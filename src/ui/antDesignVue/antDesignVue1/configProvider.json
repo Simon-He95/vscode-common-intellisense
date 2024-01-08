@@ -1,0 +1,65 @@
+{
+  "name": "AConfigProvider",
+  "props": {
+    "autoInsertSpaceInButton": {
+      "value": "",
+      "description": "Set false to remove space between 2 chinese characters on Button",
+      "default": "true",
+      "type": "boolean",
+      "description_zh": "设置为 `false` 时，移除按钮中 2 个汉字之间的空格"
+    },
+    ":csp": {
+      "value": "",
+      "description": "Set the [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) configuration",
+      "default": "-",
+      "type": "{ nonce: string }",
+      "description_zh": "设置 [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) 配置"
+    },
+    ":getPopupContainer": {
+      "value": "",
+      "description": "to set the container of the popup element. The default is to create a `div` element in `body`.",
+      "default": "() => document.body",
+      "type": "Function(triggerNode, dialogContext)",
+      "description_zh": "弹出框（Select, Tooltip, Menu 等等）渲染父节点，默认渲染到 body 上。"
+    },
+    "locale": {
+      "value": ["en_US", "zh_CN", "zh_TW"],
+      "description": "Language pack configuration, which can be found in the [ant-design-vue/es/locale](http://unpkg.com/ant-design-vue/es/locale/) directory",
+      "default": "-",
+      "type": "object",
+      "description_zh": "语言包配置，语言包可到 [ant-design-vue/es/locale](http://unpkg.com/ant-design-vue/es/locale/) 目录下寻找"
+    },
+    ":pageHeader": {
+      "value": "",
+      "description": "Unify the ghost of pageHeader ,Ref [pageHeader](<(/components/page-header)>",
+      "default": "true",
+      "type": "{ ghost: boolean }",
+      "description_zh": "统一设置 pageHeader 的 ghost，参考 [pageHeader](<(/components/page-header)>)"
+    },
+    "prefixCls": {
+      "value": "",
+      "description": "set prefix class",
+      "default": "ant",
+      "type": "string",
+      "description_zh": "设置统一样式前缀。注意：需要配合 `less` 变量 `@ant-prefix` 使用"
+    },
+    ":renderEmpty": {
+      "value": "",
+      "description": "Customize the empty state of the component. Refer to [empty state](/components/empty/)",
+      "default": "-",
+      "type": "slot-scope | Function(componentName: string): VNode",
+      "description_zh": "自定义组件空状态。参考 [空状态](/components/empty/)"
+    },
+    ":transformCellText": {
+      "value": "",
+      "description": "Table data can be changed again before rendering. The default configuration of general user empty data.",
+      "default": "-",
+      "type": "Function({ text, column, record, index }) => any",
+      "description_zh": "Table 数据渲染前可以再次改变，一般用户空数据的默认配置"
+    }
+  },
+  "methods": [],
+  "events": [],
+  "link": "https://1x.antdv.com/components/config-provider",
+  "link_zh": "https://1x.antdv.com/components/config-provider-cn"
+}

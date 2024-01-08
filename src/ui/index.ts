@@ -2,7 +2,7 @@ import { elementUi2, elementUi2Components } from './elementUi'
 import { antd4, antd4Components, antd5, antd5Components } from './antd'
 import { elementPlus2, elementPlus2Components } from './elementPlus'
 import { vant4, vant4Components } from './vant'
-import { antDesignVue2, antDesignVue2Components, antDesignVue3, antDesignVue3Components, antDesignVue4, antDesignVue4Components } from './antDesignVue'
+import { antDesignVue1, antDesignVue1Components, antDesignVue2, antDesignVue2Components, antDesignVue3, antDesignVue3Components, antDesignVue4, antDesignVue4Components } from './antDesignVue'
 import { varlet2, varlet2Components } from './varlet'
 import { naiveUi2, naiveUi2Components } from './naiveUi'
 import { vuetify3, vuetify3Components } from './vuetify'
@@ -28,6 +28,7 @@ export default {
   antDesignVue4,
   antDesignVue3,
   antDesignVue2,
+  antDesignVue1,
   varlet2,
   vuetify3,
   // uview2,
@@ -49,6 +50,7 @@ export default {
   antDesignVue4Components,
   antDesignVue3Components,
   antDesignVue2Components,
+  antDesignVue1Components,
   naiveUi2Components,
   varlet2Components,
   vuetify3Components,

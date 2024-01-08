@@ -1,0 +1,69 @@
+{
+  "name": "ACollapse",
+  "props": {
+    "v-model": {
+      "default": "默认无，accordion 模式下默认第一个元素",
+      "value": "",
+      "type": "string[]|string",
+      "description": "Key of the active panel",
+      "description_zh": "当前激活 tab 面板的 key"
+    },
+    "defaultActiveKey": {
+      "default": "无",
+      "value": "",
+      "type": "string",
+      "description": "Key of the initial active panel",
+      "description_zh": "初始化选中面板的 key"
+    },
+    "bordered": {
+      "default": "true",
+      "value": "",
+      "type": "boolean",
+      "description": "Toggles rendering of the border around the collapse block",
+      "description_zh": "带边框风格的折叠面板"
+    },
+    "accordion": {
+      "default": "false",
+      "value": "",
+      "type": "boolean",
+      "description": "If `true`, `Collapse` renders as `Accordion`",
+      "description_zh": "手风琴模式"
+    },
+    ":expandIcon": {
+      "default": "",
+      "value": "",
+      "type": "Function(props):VNode | slot=\"expandIcon\" slot-scope=\"props\"|v-slot:expandIcon=\"props\"",
+      "description": "allow to customize collapse icon",
+      "description_zh": "自定义切换图标"
+    },
+    "expandIconPosition": {
+      "default": "-",
+      "value": [
+        "left",
+        "right"
+      ],
+      "type": "left",
+      "description": "Set expand icon position: `left`, `right`",
+      "description_zh": "设置图标位置： left, right"
+    },
+    "destroyInactivePanel": {
+      "default": "false",
+      "value": "",
+      "type": "boolean",
+      "description": "Destroy Inactive Panel",
+      "description_zh": "销毁折叠隐藏的面板"
+    }
+  },
+  "methods": [],
+  "events": [
+    {
+      "name": "change",
+      "description": "Callback function executed when active panel is changed",
+      "params": "function(key)",
+      "description_zh": "切换面板的回调"
+    }
+  ],
+  "suggestions": ["a-collapse-panel"],
+  "link": "https://1x.antdv.com/components/collapse",
+  "link_zh": "https://1x.antdv.com/components/collapse-cn"
+}

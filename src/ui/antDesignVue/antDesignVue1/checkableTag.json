@@ -1,0 +1,24 @@
+{
+  "name": "ACheckableTag",
+  "props": {
+    "v-model": {
+      "value": "",
+      "description": "Checked status of Tag",
+      "default": "false",
+      "type": "boolean",
+      "description_zh": "设置标签的选中状态",
+      "required": true
+    }
+  },
+  "methods": [],
+  "events": [
+    {
+      "name": "change",
+      "description": "Callback executed when Tag is checked/unchecked",
+      "params": "(checked) => void",
+      "description_zh": "点击标签时触发的回调"
+    }
+  ],
+  "link": "https://1x.antdv.com/components/tag",
+  "link_zh": "https://1x.antdv.com/components/tag-cn"
+}

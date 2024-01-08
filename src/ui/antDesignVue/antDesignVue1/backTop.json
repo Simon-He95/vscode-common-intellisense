@@ -1,0 +1,30 @@
+{
+  "name": "ABackTop",
+  "props": {
+    ":target": {
+      "value": "",
+      "description": "specifies the scrollable area dom node",
+      "default": "() => window",
+      "type": "() => HTMLElement",
+      "description_zh": "设置需要监听其滚动事件的元素，值为一个返回对应 DOM 元素的函数"
+    },
+    ":visibilityHeight": {
+      "value": "",
+      "description": "the `BackTop` button will not show until the scroll height reaches this value",
+      "default": "400",
+      "type": "number",
+      "description_zh": "滚动高度达到此参数值才出现 BackTop"
+    }
+  },
+  "methods": [],
+  "events": [
+    {
+      "name": "click",
+      "description": "a callback function, which can be executed when you click the button",
+      "params": "Function",
+      "description_zh": "点击按钮的回调函数"
+    }
+  ],
+  "link": "https://1x.antdv.com/components/back-top",
+  "link_zh": "https://1x.antdv.com/components/back-top-cn"
+}

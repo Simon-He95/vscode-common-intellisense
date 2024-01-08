@@ -1,0 +1,10 @@
+{
+  "name": "ABreadcrumbSeparator",
+  "props": {
+  },
+  "methods": [],
+  "events": [
+  ],
+  "link": "https://1x.antdv.com/components/breadcrumb",
+  "link_zh": "https://1x.antdv.com/components/breadcrumb-cn"
+}

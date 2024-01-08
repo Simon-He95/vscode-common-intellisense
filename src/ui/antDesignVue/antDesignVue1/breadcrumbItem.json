@@ -1,0 +1,30 @@
+{
+  "name": "ABreadcrumbItem",
+  "props": {
+    "href": {
+      "value": "",
+      "description": "Linked destinations",
+      "default": "-",
+      "type": "string",
+      "description_zh": "链接的目的地"
+    },
+    ":overlay": {
+      "value": "",
+      "description": "The contents of the drop-down menu",
+      "default": "-",
+      "type": "[Menu]( | components | menu) | () => Menu",
+      "description_zh": "下拉菜单的内容"
+    }
+  },
+  "methods": [],
+  "events": [
+    {
+      "name": "click",
+      "description": "Click Events",
+      "params": "(e:MouseEvent)=>void",
+      "description_zh": "单击事件"
+    }
+  ],
+  "link": "https://1x.antdv.com/components/breadcrumb",
+  "link_zh": "https://1x.antdv.com/components/breadcrumb-cn"
+}

@@ -1,0 +1,44 @@
+{
+  "name": "AComment",
+  "props": {
+    "actions": {
+      "value": "",
+      "description": "A list of action items that appear below the content of the List of action items rendered below the comment content",
+      "default": "-",
+      "type": "Array | slot",
+      "description_zh": "在评论内容下面呈现的操作项列表"
+    },
+    "author": {
+      "value": "",
+      "description": "The element to display as the comment author",
+      "default": "-",
+      "type": "string | slot",
+      "description_zh": "要显示为注释作者的元素"
+    },
+    "avatar": {
+      "value": "",
+      "description": "The element to display as the comment avatar - generally an antd Avatar or src",
+      "default": "-",
+      "type": "string | slot",
+      "description_zh": "要显示为评论头像的元素 - 通常是 antd `Avatar` 或者 src"
+    },
+    "content": {
+      "value": "",
+      "description": "The main content of the comment",
+      "default": "-",
+      "type": "string | slot",
+      "description_zh": "评论的主要内容"
+    },
+    "datetime": {
+      "value": "",
+      "description": "A datetime element containing the time to be displayed",
+      "default": "-",
+      "type": "string | slot",
+      "description_zh": "展示时间描述"
+    }
+  },
+  "methods": [],
+  "events": [],
+  "link": "https://1x.antdv.com/components/comment",
+  "link_zh": "https://1x.antdv.com/components/comment-cn"
+}

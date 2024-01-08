@@ -1,0 +1,122 @@
+{
+  "name": "ACalendar",
+  "props": {
+    "dateCellRender": {
+      "default": "无",
+      "value": "",
+      "type": "function(date: moment)",
+      "description": "Customize the display of the date cell by setting a scoped slot, the returned content will be appended to the cell",
+      "description_zh": "作用域插槽，用来自定义渲染日期单元格，返回内容会被追加到单元格,"
+    },
+    "dateFullCellRender": {
+      "default": "无",
+      "value": "",
+      "type": "function(date: moment)",
+      "description": "Customize the display of the date cell by setting a scoped slot, the returned content will override the cell",
+      "description_zh": "作用域插槽，自定义渲染日期单元格，返回内容覆盖单元格"
+    },
+    "defaultValue": {
+      "default": "默认日期",
+      "value": "",
+      "type": "moment",
+      "description": "The date selected by default",
+      "description_zh": "默认展示的日期"
+    },
+    "disabledDate": {
+      "default": "无",
+      "value": "",
+      "type": "(currentDate: moment) => boolean",
+      "description": "Function that specifies the dates that cannot be selected",
+      "description_zh": "不可选择的日期"
+    },
+    "fullscreen": {
+      "default": "true",
+      "value": "",
+      "type": "boolean",
+      "description": "Whether to display in full-screen",
+      "description_zh": "是否全屏显示"
+    },
+    ":locale": {
+      "default": "默认配置",
+      "value": "",
+      "type": "object",
+      "description": "The calendar's locale",
+      "description_zh": "国际化配置"
+    },
+    "mode": {
+      "default": "month",
+      "value": [
+        "month",
+        "year"
+      ],
+      "type": "string",
+      "description": "The display mode of the calendar",
+      "description_zh": "初始模式，month/year"
+    },
+    "monthCellRender": {
+      "default": "无",
+      "value": "",
+      "type": "function(date: moment)",
+      "description": "Customize the display of the month cell by setting a scoped slot, the returned content will be appended to the cell",
+      "description_zh": "作用域插槽，自定义渲染月单元格，返回内容会被追加到单元格"
+    },
+    "monthFullCellRender": {
+      "default": "无",
+      "value": "",
+      "type": "function(date: moment)",
+      "description": "Customize the display of the month cell by setting a scoped slot, the returned content will override the cell",
+      "description_zh": "作用域插槽，自定义渲染月单元格，返回内容覆盖单元格"
+    },
+    "validRange": {
+      "default": "无",
+      "value": "",
+      "type": "[moment, moment]",
+      "description": "to set valid range",
+      "description_zh": "设置可以显示的日期"
+    },
+    "v-model": {
+      "default": "当前日期",
+      "value": "",
+      "type": "moment",
+      "description": "The current selected date",
+      "description_zh": "展示日期"
+    },
+    "headerRender": {
+      "default": "-",
+      "value": "",
+      "type": "function(object:{value: moment, type: string, onChange: f(), onTypeChange: f()}) | slot-scope",
+      "description": "render custom header in panel",
+      "description_zh": "自定义头部内容"
+    },
+    "valueFormat": {
+      "default": "-",
+      "value": "",
+      "type": "string，具体格式",
+      "description": "optional, format of binding value. If not specified, the binding value will be a Date object",
+      "description_zh": "可选，绑定值的格式，对 value、defaultValue 起作用。不指定则绑定值为 moment 对象"
+    }
+  },
+  "methods": [],
+  "events": [
+    {
+      "name": "panelChange",
+      "params": "function(date: moment | string, mode: string)",
+      "description": "Callback for when panel changes",
+      "description_zh": "日期面板变化回调"
+    },
+    {
+      "name": "select",
+      "params": "function(date: moment | string）",
+      "description": "Callback for when a date is selected",
+      "description_zh": "点击选择日期回调"
+    },
+    {
+      "name": "change",
+      "params": "function(date: moment | string）",
+      "description": "Callback for when value change",
+      "description_zh": "日期变化时的回调, 面板变化有可能导致日期变化"
+    }
+  ],
+  "link": "https://1x.antdv.com/components/calendar",
+  "link_zh": "https://1x.antdv.com/components/calendar-cn"
+}

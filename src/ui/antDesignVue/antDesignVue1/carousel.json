@@ -1,0 +1,92 @@
+{
+  "name": "ACarousel",
+  "props": {
+    "afterChange": {
+      "default": "无",
+      "value": "",
+      "type": "function(current)",
+      "description": "Callback function called after the current index changes",
+      "description_zh": "切换面板的回调"
+    },
+    "autoplay": {
+      "default": "false",
+      "value": "",
+      "type": "boolean",
+      "description": "Whether to scroll automatically",
+      "description_zh": "是否自动切换"
+    },
+    "beforeChange": {
+      "default": "无",
+      "value": "",
+      "type": "function(from, to)",
+      "description": "Callback function called before the current index changes",
+      "description_zh": "切换面板的回调"
+    },
+    "dotPosition": {
+      "default": "bottom",
+      "value": [
+        "top",
+        "bottom",
+        "left",
+        "right"
+      ],
+      "type": "string",
+      "description": "The position of the dots, which can be one of top bottom left right",
+      "description_zh": "面板指示点位置，可选 top bottom left right"
+    },
+    "dots": {
+      "default": "true",
+      "value": "",
+      "type": "boolean",
+      "description": "Whether to show the dots at the bottom of the gallery",
+      "description_zh": "是否显示面板指示点"
+    },
+    "dotsClass": {
+      "default": "slick-dots",
+      "value": "",
+      "type": "string",
+      "description": "Class name of the dots",
+      "description_zh": "面板指示点类名"
+    },
+    "easing": {
+      "default": "linear",
+      "value": "",
+      "type": "string",
+      "description": "Transition interpolation function name",
+      "description_zh": "动画效果"
+    },
+    "effect": {
+      "default": "Transition effect",
+      "value": [
+        "scrollx",
+        "fade"
+      ],
+      "type": "scrollx | fade",
+      "description": "Transition effect",
+      "description_zh": "动画效果函数，可取 scrollx, fade"
+    }
+  },
+  "methods": [
+    {
+      "name": "goTo(slideNumber, dontAnimate)",
+      "description": "When switching to a specified panel, dontAnimate = true, no animation is used",
+      "params": "(slideNumber, dontAnimate)",
+      "description_zh": "切换到指定面板, dontAnimate = true 时，不使用动画"
+    },
+    {
+      "name": "next",
+      "description": "Switch to the next panel",
+      "params": "",
+      "description_zh": "切换到下一面板"
+    },
+    {
+      "name": "prev",
+      "description": "Switch to the previous panel",
+      "params": "",
+      "description_zh": "切换到上一面板"
+    }
+  ],
+  "events": [],
+  "link": "https://1x.antdv.com/components/carousel",
+  "link_zh": "https://1x.antdv.com/components/carousel-cn"
+}

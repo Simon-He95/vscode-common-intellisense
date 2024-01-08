@@ -1,0 +1,81 @@
+{
+  "name": "ABadge",
+  "props": {
+    "color": {
+      "value": "",
+      "description": "Customize Badge dot color",
+      "default": "-",
+      "type": "string",
+      "description_zh": "自定义小圆点的颜色"
+    },
+    "count": {
+      "value": "",
+      "description": "Number to show in badge",
+      "default": "",
+      "type": "number | string | slot",
+      "description_zh": "展示的数字，大于 overflowCount 时显示为 `${overflowCount}+`，为 0 时隐藏",
+      "required": true
+    },
+    "dot": {
+      "value": "",
+      "description": "No numbers are displayed, just a small red dot",
+      "default": "false",
+      "type": "boolean",
+      "description_zh": "不展示数字，只有一个小红点"
+    },
+    ":numberStyle": {
+      "value": "",
+      "description": "sets the display style of the status dot",
+      "default": "''",
+      "type": "object",
+      "description_zh": "设置状态点的样式"
+    },
+    ":offset": {
+      "value": "",
+      "description": "Set offset of the badge dot, like [x, y]",
+      "default": "-",
+      "type": "[number | string, number | string]",
+      "description_zh": "设置状态点的位置偏移，格式为 [x, y]"
+    },
+    ":overflowCount": {
+      "value": "",
+      "description": "Max count to show",
+      "default": "99",
+      "type": "number",
+      "description_zh": "展示封顶的数字值"
+    },
+    "showZero": {
+      "value": "",
+      "description": "Whether to show badge when count is zero",
+      "default": "false",
+      "type": "boolean",
+      "description_zh": "当数值为 0 时，是否展示 Badge"
+    },
+    "status": {
+      "value": ["success", "processing", "default", "error", "warning"],
+      "description": "Set Badge to the status point",
+      "default": "''",
+      "type": "Enum{ 'success', 'processing, 'default', 'error', 'warning' }",
+      "description_zh": "设置 Badge 为状态点"
+    },
+    "text": {
+      "value": "",
+      "description": "If `status` is set, `text` sets the display text of the status `dot`",
+      "default": "''",
+      "type": "string",
+      "description_zh": "在设置了 `status` 的前提下有效，设置状态点的文本"
+    },
+    "title": {
+      "value": "",
+      "description": "Text to show when hovering over the badge",
+      "default": "count",
+      "type": "string",
+      "description_zh": "设置鼠标放在状态点上时显示的文字"
+    }
+  },
+  "methods": [],
+  "events": [],
+  "suggestions": ["a-avatar"],
+  "link": "https://1x.antdv.com/components/badge",
+  "link_zh": "https://1x.antdv.com/components/badge-cn"
+}

@@ -1,0 +1,64 @@
+{
+  "name": "ACheckbox",
+  "props": {
+    "autoFocus": {
+      "default": "false",
+      "value": "",
+      "type": "boolean",
+      "description": "get focus when component mounted",
+      "description_zh": "自动获取焦点"
+    },
+    "checked": {
+      "default": "false",
+      "value": "",
+      "type": "boolean",
+      "description": "Specifies whether the checkbox is selected.",
+      "description_zh": "指定当前是否选中"
+    },
+    "defaultChecked": {
+      "default": "false",
+      "value": "",
+      "type": "boolean",
+      "description": "Specifies the initial state: whether or not the checkbox is selected.",
+      "description_zh": "初始是否选中"
+    },
+    "disabled": {
+      "default": "false",
+      "value": "",
+      "type": "boolean",
+      "description": "Disable checkbox",
+      "description_zh": "失效状态"
+    },
+    "indeterminate": {
+      "default": "false",
+      "value": "",
+      "type": "boolean",
+      "description": "indeterminate checked state of checkbox",
+      "description_zh": "设置 indeterminate 状态，只负责样式控制"
+    }
+  },
+  "methods": [
+    {
+      "name": "blur",
+      "description": "Remove the focus",
+      "params": "",
+      "description_zh": "移除焦点"
+    },
+    {
+      "name": "focus",
+      "description": "Get focus",
+      "params": "",
+      "description_zh": "获取焦点"
+    }
+  ],
+  "events": [
+    {
+      "name": "change",
+      "description": "The callback function that is triggered when the state changes.",
+      "params": "Function(e:Event)",
+      "description_zh": "变化时回调函数"
+    }
+  ],
+  "link": "https://1x.antdv.com/components/checkbox",
+  "link_zh": "https://1x.antdv.com/components/checkbox-cn"
+}

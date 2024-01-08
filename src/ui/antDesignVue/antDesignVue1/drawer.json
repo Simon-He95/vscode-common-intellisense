@@ -1,0 +1,161 @@
+{
+  "name": "ADrawer",
+  "props": {
+    "closable": {
+      "default": "true",
+      "value": "",
+      "type": "boolean",
+      "description": "Whether a close (x) button is visible on top right of the Drawer dialog or not.",
+      "description_zh": "是否显示右上角的关闭按钮"
+    },
+    "destroyOnClose": {
+      "default": "false",
+      "value": "",
+      "type": "boolean",
+      "description": "Whether to unmount child components on closing drawer or not.",
+      "description_zh": "关闭时销毁 Drawer 里的子元素"
+    },
+    "getContainer": {
+      "default": "'body'",
+      "value": "",
+      "type": "HTMLElement | () => HTMLElement | Selectors",
+      "description": "Return the mounted node for Drawer.",
+      "description_zh": "指定 Drawer 挂载的 HTML 节点"
+    },
+    "maskClosable": {
+      "default": "true",
+      "value": "",
+      "type": "boolean",
+      "description": "Clicking on the mask (area outside the Drawer) to close the Drawer or not.",
+      "description_zh": "点击蒙层是否允许关闭"
+    },
+    "mask": {
+      "default": "true",
+      "value": "",
+      "type": "Boolean",
+      "description": "Whether to show mask or not.",
+      "description_zh": "是否展示遮罩"
+    },
+    ":maskStyle": {
+      "default": "{}",
+      "value": "",
+      "type": "object",
+      "description": "Style for Drawer's mask element.",
+      "description_zh": "遮罩样式"
+    },
+    "title": {
+      "default": "-",
+      "value": "",
+      "type": "string | slot",
+      "description": "The title for Drawer.",
+      "description_zh": "标题"
+    },
+    "visible": {
+      "default": "false",
+      "value": "",
+      "type": "boolean",
+      "description": "Whether the Drawer dialog is visible or not.",
+      "description_zh": "Drawer 是否可见"
+    },
+    "wrapClassName": {
+      "default": "-",
+      "value": "",
+      "type": "string",
+      "description": "The class name of the container of the Drawer dialog.",
+      "description_zh": "对话框外层容器的类名"
+    },
+    ":wrapStyle": {
+      "default": "-",
+      "value": "",
+      "type": "object",
+      "description": "Style of wrapper element which contains mask compare to drawerStyle",
+      "description_zh": "可用于设置 Drawer 最外层容器的样式，和 drawerStyle 的区别是作用节点包括 mask"
+    },
+    ":drawerStyle": {
+      "default": "-",
+      "value": "",
+      "type": "object",
+      "description": "Style of the popup layer element",
+      "description_zh": "用于设置 Drawer 弹出层的样式"
+    },
+    ":headerStyle": {
+      "default": "-",
+      "value": "",
+      "type": "object",
+      "description": "Style of the drawer header part",
+      "description_zh": "用于设置 Drawer 头部的样式"
+    },
+    ":bodyStyle": {
+      "default": "-",
+      "value": "",
+      "type": "object",
+      "description": "Style of the drawer content part",
+      "description_zh": "可用于设置 Drawer 内容部分的样式"
+    },
+    "width": {
+      "default": "256",
+      "value": "",
+      "type": "string | number",
+      "description": "Width of the Drawer dialog.",
+      "description_zh": "宽度"
+    },
+    "height": {
+      "default": "256",
+      "value": "",
+      "type": "string | number",
+      "description": "placement is top or bottom, height of the Drawer dialog.",
+      "description_zh": "高度, 在 placement 为 top 或 bottom 时使用"
+    },
+    "zIndex": {
+      "default": "1000",
+      "value": "",
+      "type": "Number",
+      "description": "The z-index of the Drawer.",
+      "description_zh": "设置 Drawer 的 z-index"
+    },
+    "placement": {
+      "default": "'right'",
+      "value": [
+        "top",
+        "right",
+        "bottom",
+        "left"
+      ],
+      "type": "'top' | 'right' | 'bottom' | 'left'",
+      "description": "The placement of the Drawer.",
+      "description_zh": "抽屉的方向"
+    },
+    "handle": {
+      "default": "-",
+      "value": "",
+      "type": "VNode | slot",
+      "description": "After setting, the drawer is directly mounted on the DOM, and you can control the drawer to open or close through this handle.",
+      "description_zh": "设置后抽屉直接挂载到 DOM 上，你可以通过该 handle 控制抽屉打开关闭"
+    },
+    ":afterVisibleChange": {
+      "default": "无",
+      "value": "",
+      "type": "function(visible)",
+      "description": "Callback after the animation ends when switching drawers.",
+      "description_zh": "切换抽屉时动画结束后的回调"
+    },
+    "keyboard": {
+      "default": "true",
+      "value": "",
+      "type": "boolean",
+      "description": "Whether support press esc to close",
+      "description_zh": "是否支持键盘 esc 关闭"
+    }
+  },
+  "methods": [
+    {
+      "name": "close",
+      "description": "Specify a callback that will be called when a user clicks mask, close button or Cancel button.",
+      "description_zh": "点击遮罩层或右上角叉或取消按钮的回调",
+      "params": "function(e)"
+    }
+  ],
+  "events": [],
+  "link": "https://1x.antdv.com/components/drawer",
+  "link_zh": "https://1x.antdv.com/components/drawer-cn"
+}

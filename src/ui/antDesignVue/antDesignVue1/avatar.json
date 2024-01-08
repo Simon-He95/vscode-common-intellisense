@@ -1,0 +1,62 @@
+{
+  "name": "AAvatar",
+  "props": {
+    "alt": {
+      "value": "",
+      "description": "This attribute defines the alternative text describing the image",
+      "default": "-",
+      "type": "string",
+      "description_zh": "图像无法显示时的替代文本"
+    },
+    ":icon": {
+      "value": "",
+      "description": "the `Icon` type for an icon avatar, see `Icon` Component",
+      "default": "-",
+      "type": "VNode | slot",
+      "description_zh": "设置头像的图标类型，可设为 Icon 的 `type` 或 VNode"
+    },
+    ":loadError": {
+      "value": "",
+      "description": "handler when img load error, return false to prevent default fallback behavior",
+      "default": "-",
+      "type": "() => boolean",
+      "description_zh": "图片加载失败的事件，返回 false 会关闭组件默认的 fallback 行为"
+    },
+    "shape": {
+      "value": [
+        "circle",
+        "square"
+      ],
+      "description": "the shape of avatar",
+      "default": "circle",
+      "type": "circle | square",
+      "description_zh": "指定头像的形状"
+    },
+    "size": {
+      "value": "",
+      "description": "the size of the avatar",
+      "default": "default",
+      "type": "number | string: `large` `small` `default`",
+      "description_zh": "设置头像的大小"
+    },
+    "src": {
+      "value": "",
+      "description": "the address of the image for an image avatar",
+      "default": "-",
+      "type": "string",
+      "description_zh": "图片类头像的资源地址",
+      "required": true
+    },
+    "srcSet": {
+      "value": "",
+      "description": "a list of sources to use for different screen resolutions",
+      "default": "-",
+      "type": "string",
+      "description_zh": "设置图片类头像响应式资源地址"
+    }
+  },
+  "methods": [],
+  "events": [],
+  "link": "https://1x.antdv.com/components/avatar",
+  "link_zh": "https://1x.antdv.com/components/avatar-cn"
+}

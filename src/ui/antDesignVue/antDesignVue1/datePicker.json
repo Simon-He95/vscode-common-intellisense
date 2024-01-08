@@ -1,0 +1,174 @@
+{
+  "name": "ADatePicker",
+  "props": {
+    "allowClear": {
+      "default": "true",
+      "value": "",
+      "type": "boolean",
+      "description": "Whether to show clear button",
+      "description_zh": "是否显示清除按钮"
+    },
+    "autoFocus": {
+      "default": "false",
+      "value": "",
+      "type": "boolean",
+      "description": "get focus when component mounted",
+      "description_zh": "自动获取焦点"
+    },
+    "dateRender": {
+      "default": "-",
+      "value": "",
+      "type": "slot=\"dateRender\" slot-scope=\"current, today\"",
+      "description": "custom rendering function for date cells by setting a scoped slot",
+      "description_zh": "作用域插槽，自定义日期单元格的内容"
+    },
+    "disabled": {
+      "default": "false",
+      "value": "",
+      "type": "boolean",
+      "description": "determine whether the DatePicker is disabled",
+      "description_zh": "禁用"
+    },
+    ":disabledDate": {
+      "default": "无",
+      "value": "",
+      "type": "(currentDate: moment) => boolean",
+      "description": "specify the date that cannot be selected",
+      "description_zh": "不可选择的日期"
+    },
+    ":getCalendarContainer": {
+      "default": "无",
+      "value": "",
+      "type": "function(trigger)",
+      "description": "to set the container of the floating layer, while the default is to create a div element in body",
+      "description_zh": "定义浮层的容器，默认为 body 上新建 div"
+    },
+    ":locale": {
+      "default": "默认配置",
+      "value": "",
+      "type": "object",
+      "description": "国际化配置",
+      "description_zh": "国际化配置"
+    },
+    "mode": {
+      "default": "'date'",
+      "value": [
+        "'date'",
+        "'month'",
+        "'year'",
+        "'decade'"
+      ],
+      "type": "time|date|month|year|decade",
+      "description": "localization configuration",
+      "description_zh": "日期面板的状态（设置后无法选择年份/月份？）"
+    },
+    "open": {
+      "default": "false",
+      "value": "",
+      "type": "boolean",
+      "description": "open state of picker",
+      "description_zh": "控制弹层是否展开"
+    },
+    "placeholder": {
+      "default": "-",
+      "value": "",
+      "type": "string|RangePicker[]",
+      "description": "placeholder of date input",
+      "description_zh": "输入框提示文字"
+    },
+    ":popupStyle": {
+      "default": "{}",
+      "value": "",
+      "type": "object",
+      "description": "to customize the style of the popup calendar",
+      "description_zh": "额外的弹出日历样式"
+    },
+    "dropdownClassName": {
+      "default": "-",
+      "value": "",
+      "type": "string",
+      "description": "to customize the className of the popup calendar",
+      "description_zh": "额外的弹出日历 className"
+    },
+    "size": {
+      "default": "无",
+      "value": [
+        "large",
+        "small"
+      ],
+      "type": "string",
+      "description": "determine the size of the input box, the height of large and small, are 40px and 24px respectively, while default size is 32px",
+      "description_zh": "输入框大小，large 高度为 40px，small 为 24px，默认是 32px"
+    },
+    "suffixIcon": {
+      "default": "-",
+      "value": "",
+      "type": "VNode | slot",
+      "description": "The custom suffix icon",
+      "description_zh": "自定义的选择框后缀图标"
+    },
+    "inputReadOnly": {
+      "default": "false",
+      "value": "",
+      "type": "boolean",
+      "description": "Set the readonly attribute of the input tag (avoids virtual keyboard on touch devices)",
+      "description_zh": "设置输入框为只读（避免在移动设备上打开虚拟键盘）"
+    },
+    ":align": {
+      "default": "无",
+      "value": "",
+      "type": "Object",
+      "description": "this value will be merged into placement's config, please refer to the settings dom-align",
+      "description_zh": "该值将合并到 placement 的配置中，设置参考 dom-align"
+    },
+    "valueFormat": {
+      "default": "-",
+      "value": "",
+      "type": "string，具体格式",
+      "description": "optional, format of binding value. If not specified, the binding value will be a Date object",
+      "description_zh": "可选，绑定值的格式，对 value、defaultValue、defaultPickerValue 起作用。不指定则绑定值为 moment 对象"
+    }
+  },
+  "methods": [
+    {
+      "name": "blur",
+      "description": "Remove the focus",
+      "params": "",
+      "description_zh": "移除焦点"
+    },
+    {
+      "name": "focus",
+      "description": "Get focus",
+      "params": "",
+      "description_zh": "获取焦点"
+    }
+  ],
+  "events": [
+    {
+      "name": "openChange",
+      "description": "a callback function, can be executed whether the popup calendar is popped up or closed",
+      "params": "function(status)",
+      "description_zh": "弹出日历和关闭日历的回调"
+    },
+    {
+      "name": "panelChange",
+      "description": "callback when picker panel mode is changed",
+      "params": "function(value, mode)",
+      "description_zh": "日期面板变化时的回调"
+    },
+    {
+      "name": "change",
+      "description": "a callback function, can be executed when the selected time is changing",
+      "params": "function(date: moment | string, dateString: string)",
+      "description_zh": "时间发生变化的回调"
+    },
+    {
+      "name": "ok",
+      "description": "callback when click ok button",
+      "params": "function()",
+      "description_zh": "点击确定按钮的回调"
+    }
+  ],
+  "link": "https://1x.antdv.com/components/date-picker",
+  "link_zh": "https://1x.antdv.com/components/date-picker-cn"
+}

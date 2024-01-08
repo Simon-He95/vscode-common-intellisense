@@ -1,0 +1,46 @@
+{
+  "name": "ACheckboxGroup",
+  "props": {
+    "disabled": {
+      "value": "",
+      "description": "Disable all checkboxes",
+      "default": "false",
+      "type": "boolean",
+      "description_zh": "整组失效"
+    },
+    "name": {
+      "value": "",
+      "description": "The name property of all input[type=\"checkbox\"] children",
+      "default": "-",
+      "type": "string",
+      "description_zh": "CheckboxGroup 下所有 `input[type=\"checkbox\"]` 的 `name` 属性"
+    },
+    ":options": {
+      "value": "",
+      "description": "Specifies options, you can customize label with slot = \"label\" slot-scope=\"option\"",
+      "default": "[]",
+      "type": "string[] | Array<{ label: string value: string disabled?: boolean, indeterminate?: boolean, onChange?: function }>",
+      "description_zh": "指定可选项，可以通过 slot=\"label\" slot-scope=\"option\" 定制label",
+      "required": true
+    },
+    "value": {
+      "value": "",
+      "description": "Used for setting the currently selected value.",
+      "default": "[]",
+      "type": "string[]",
+      "description_zh": "指定选中的选项",
+      "required": true
+    }
+  },
+  "methods": [],
+  "events": [
+    {
+      "name": "change",
+      "description": "The callback function that is triggered when the state changes.",
+      "params": "Function(checkedValue)",
+      "description_zh": "变化时回调函数"
+    }
+  ],
+  "link": "https://1x.antdv.com/components/checkbox",
+  "link_zh": "https://1x.antdv.com/components/checkbox-cn"
+}

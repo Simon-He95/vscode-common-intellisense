@@ -1,0 +1,84 @@
+{
+  "name": "AAlert",
+  "props": {
+    ":afterClose": {
+      "value": "",
+      "description": "Called when close animation is finished",
+      "default": "-",
+      "type": "() => void",
+      "description_zh": "关闭动画结束后触发的回调函数"
+    },
+    "banner": {
+      "value": "",
+      "description": "Whether to show as banner",
+      "default": "false",
+      "type": "boolean",
+      "description_zh": "是否用作顶部公告"
+    },
+    "closable": {
+      "value": "",
+      "description": "Whether Alert can be closed",
+      "default": "无",
+      "type": "boolean",
+      "description_zh": "默认不显示关闭按钮"
+    },
+    ":closeText": {
+      "value": "",
+      "description": "Close text to show",
+      "default": "无",
+      "type": "string | slot",
+      "description_zh": "自定义关闭按钮"
+    },
+    ":description": {
+      "value": "",
+      "description": "Additional content of Alert",
+      "default": "无",
+      "type": "string | slot",
+      "description_zh": "警告提示的辅助性文字介绍"
+    },
+    ":icon": {
+      "value": "",
+      "description": "Custom icon, 'showIcon' is valid when 'true'",
+      "default": "-",
+      "type": "vnode | slot",
+      "description_zh": "自定义图标，`showIcon` 为 `true` 时有效"
+    },
+    ":message": {
+      "value": "",
+      "description": "Content of Alert",
+      "default": "无",
+      "type": "string | slot",
+      "description_zh": "警告提示内容"
+    },
+    "showIcon": {
+      "value": "",
+      "description": "Whether or not to display secondary icons",
+      "default": "false,`banner` 模式下默认值为 true",
+      "type": "boolean",
+      "description_zh": "是否显示辅助图标"
+    },
+    "type": {
+      "value": [
+        "success",
+        "info",
+        "warning",
+        "error"
+      ],
+      "description": "Type of Alert styles, options: 'success', 'info', 'warning', error",
+      "default": "info,`banner` 模式下默认值为 warning",
+      "type": "string",
+      "description_zh": "指定警告提示的样式，有四种选择 `success`、`info`、`warning`、error"
+    }
+  },
+  "methods": [],
+  "events": [
+    {
+      "name": "close",
+      "description": "Callback when Alert is closed",
+      "params": "(e: MouseEvent) => void",
+      "description_zh": "关闭时触发的回调函数"
+    }
+  ],
+  "link": "https://1x.antdv.com/components/alert",
+  "link_zh": "https://1x.antdv.com/components/alert-cn"
+}

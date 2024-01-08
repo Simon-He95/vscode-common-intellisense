@@ -1,0 +1,24 @@
+{
+  "name": "ADescriptionsItem",
+  "props": {
+    "label": {
+      "value": "",
+      "description": "description of the content",
+      "default": "-",
+      "type": "string | VNode | slot",
+      "description_zh": "内容的描述",
+      "required": true
+    },
+    ":span": {
+      "value": "",
+      "description": "The number of columns included",
+      "default": "1",
+      "type": "number",
+      "description_zh": "包含列的数量"
+    }
+  },
+  "methods": [],
+  "events": [],
+  "link": "https://1x.antdv.com/components/descriptions",
+  "link_zh": "https://1x.antdv.com/components/descriptions-cn"
+}

@@ -1,0 +1,59 @@
+{
+  "name": "ADescriptions",
+  "props": {
+    "title": {
+      "default": "-",
+      "value": "",
+      "type": "string | VNode | v-slot:title",
+      "description": "The title of the description list, placed at the top",
+      "description_zh": "描述列表的标题，显示在最顶部"
+    },
+    "bordered": {
+      "default": "false",
+      "value": "",
+      "type": "boolean",
+      "description": "whether to display the border",
+      "description_zh": "是否展示边框"
+    },
+    ":column": {
+      "default": "3",
+      "value": "",
+      "type": "number",
+      "description": "the number of DescriptionItems in a row,could be a number or a object like { xs: 8, sm: 16, md: 24},(Only set bordered={true} to take effect)",
+      "description_zh": "一行的 DescriptionItems 数量，可以写成像素值或支持响应式的对象写法 { xs: 8, sm: 16, md: 24}"
+    },
+    "size": {
+      "default": "default",
+      "value": [
+        "default",
+        "middle",
+        "small"
+      ],
+      "type": "default | middle | small",
+      "description": "set the size of the list. Can be set to `middle`,`small`, or not filled",
+      "description_zh": "设置列表的大小。可以设置为 middle 、small, 或不填（只有设置 bordered={true} 生效）"
+    },
+    "layout": {
+      "default": "horizontal",
+      "value": [
+        "horizontal",
+        "vertical"
+      ],
+      "type": "horizontal | vertical",
+      "description": "Define description layout",
+      "description_zh": "描述布局"
+    },
+    "colon": {
+      "default": "true",
+      "value": "",
+      "type": "boolean",
+      "description": "change default props colon value of Descriptions.Item",
+      "description_zh": "配置 Descriptions.Item 的 colon 的默认值"
+    }
+  },
+  "methods": [],
+  "events": [],
+  "suggestions": ["a-descriptions-item"],
+  "link": "https://1x.antdv.com/components/descriptions",
+  "link_zh": "https://1x.antdv.com/components/descriptions-cn"
+}

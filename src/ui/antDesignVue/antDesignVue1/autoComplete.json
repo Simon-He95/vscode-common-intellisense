@@ -1,0 +1,165 @@
+{
+  "name": "AAutoComplete",
+  "props": {
+    "allowClear": {
+      "value": "",
+      "description": "Show clear button, effective in multiple mode only.",
+      "default": "false",
+      "type": "boolean",
+      "description_zh": "支持清除, 单选模式有效"
+    },
+    "autofocus": {
+      "value": "",
+      "description": "get focus when component mounted",
+      "default": "false",
+      "type": "boolean",
+      "description_zh": "自动获取焦点"
+    },
+    "backfill": {
+      "value": "",
+      "description": "backfill selected item the input when using keyboard",
+      "default": "false",
+      "type": "boolean",
+      "description_zh": "使用键盘选择选项的时候把选中项回填到输入框中"
+    },
+    "default": {
+      "value": "",
+      "description": "Customize the input box",
+      "default": "`<Input | >`",
+      "type": "slot",
+      "description_zh": "自定义输入框"
+    },
+    "defaultActiveFirstOption": {
+      "value": "",
+      "description": "Whether to highlight the first option by default.",
+      "default": "true",
+      "type": "boolean",
+      "description_zh": "是否默认高亮第一个选项。"
+    },
+    "defaultOpen": {
+      "value": "",
+      "description": "Initial open state of dropdown",
+      "default": "-",
+      "type": "boolean",
+      "description_zh": "是否默认展开下拉菜单"
+    },
+    "disabled": {
+      "value": "",
+      "description": "Whether disabled select",
+      "default": "false",
+      "type": "boolean",
+      "description_zh": "是否禁用"
+    },
+    ":dropdownMenuStyle": {
+      "value": "",
+      "description": "additional style applied to dropdown menu",
+      "default": "",
+      "type": "object",
+      "description_zh": "dropdown 菜单自定义样式"
+    },
+    ":filterOption": {
+      "value": "",
+      "description": "If true, filter options by input, if function, filter options against it. The function will receive two arguments, inputValue and option, if the function returns true, the option will be included in the filtered set; Otherwise, it will be excluded.",
+      "default": "true",
+      "type": "boolean or function(inputValue, option)",
+      "description_zh": "是否根据输入项进行筛选。当其为一个函数时，会接收 `inputValue` `option` 两个参数，当 `option` 符合筛选条件时，应返回 `true`，反之则返回 `false`。"
+    },
+    "open": {
+      "value": "",
+      "description": "Controlled open state of dropdown",
+      "default": "-",
+      "type": "boolean",
+      "description_zh": "是否展开下拉菜单"
+    },
+    "placeholder": {
+      "value": "",
+      "description": "placeholder of input",
+      "default": "-",
+      "type": "string | slot",
+      "description_zh": "输入框提示"
+    },
+    "v-model": {
+      "value": "",
+      "description": "selected option",
+      "default": "无",
+      "type": "string | string[]|{ key: string, label: string | vNodes }|Array<{ key: string, label: string | vNodes }>",
+      "description_zh": "指定当前选中的条目",
+      "required": true
+    },
+    ":optionLabelProp": {
+      "value": "",
+      "description": "Which prop value of option will render as content of select.",
+      "default": "`children`",
+      "type": "string",
+      "description_zh": "回填到选择框的 Option 的属性值，默认是 Option 的子元素。比如在子元素需要高亮效果时，此值可以设为 value。"
+    },
+    ":defaultValue": {
+      "value": "",
+      "description": "Initial selected option.",
+      "default": "",
+      "type": "string|string[]| 无",
+      "description_zh": "指定默认选中的条目"
+    },
+    ":dataSource": {
+      "value": "",
+      "description": "Data source for autocomplete",
+      "default": "",
+      "type": "slot | DataSourceItemType[]",
+      "description_zh": "自动完成的数据源"
+    }
+  },
+  "methods": [
+    {
+      "name": "blur",
+      "description": "Remove the focus",
+      "params": "",
+      "description_zh": "移除焦点"
+    },
+    {
+      "name": "focus",
+      "description": "Get focus",
+      "params": "",
+      "description_zh": "获取焦点"
+    }
+  ],
+  "events": [
+    {
+      "name": "blur",
+      "description": "Called when leaving the component.",
+      "params": "function()",
+      "description_zh": "失去焦点时的回调"
+    },
+    {
+      "name": "change",
+      "description": "Called when select an option or input value change, or value of input is changed",
+      "params": "function(value)",
+      "description_zh": "选中 option，或 input 的 value 变化时，调用此函数"
+    },
+    {
+      "name": "dropdownVisibleChange",
+      "description": "Call when dropdown open",
+      "params": "function(open)",
+      "description_zh": "展开下拉菜单的回调"
+    },
+    {
+      "name": "focus",
+      "description": "Called when entering the component",
+      "params": "function()",
+      "description_zh": "获得焦点时的回调"
+    },
+    {
+      "name": "search",
+      "description": "Called when searching items.",
+      "params": "function(value)",
+      "description_zh": "搜索补全项的时候调用"
+    },
+    {
+      "name": "select",
+      "description": "Called when selected, the parameter is the value value of the selected item",
+      "params": "function(value, option)",
+      "description_zh": "被选中时调用，参数为选中项的 value 值"
+    }
+  ],
+  "link": "https://1x.antdv.com/components/auto-complete",
+  "link_zh": "https://1x.antdv.com/components/auto-complete-cn"
+}

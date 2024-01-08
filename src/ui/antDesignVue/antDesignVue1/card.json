@@ -1,0 +1,125 @@
+{
+  "name": "ACard",
+  "props": {
+    "actions": {
+      "default": "-",
+      "value": "",
+      "type": "slots",
+      "description": "The action list, shows at the bottom of the Card.",
+      "description_zh": "卡片操作组，位置在卡片底部"
+    },
+    "activeTabKey": {
+      "default": "-",
+      "value": "",
+      "type": "string",
+      "description": "Current TabPane's key",
+      "description_zh": "当前激活页签的 key"
+    },
+    ":headStyle": {
+      "default": "-",
+      "value": "",
+      "type": "object",
+      "description": "Inline style to apply to the card head",
+      "description_zh": "自定义标题区域样式"
+    },
+    ":bodyStyle": {
+      "default": "-",
+      "value": "",
+      "type": "object",
+      "description": "Inline style to apply to the card content",
+      "description_zh": "内容区域自定义样式"
+    },
+    "bordered": {
+      "default": "true",
+      "value": "",
+      "type": "boolean",
+      "description": "Toggles rendering of the border around the card",
+      "description_zh": "是否有边框"
+    },
+    "cover": {
+      "default": "-",
+      "value": "",
+      "type": "slot",
+      "description": "Card cover",
+      "description_zh": "卡片封面"
+    },
+    "defaultActiveTabKey": {
+      "default": "第一个页签",
+      "value": "",
+      "type": "string",
+      "description": "Initial active TabPane's key, if activeTabKey is not set.",
+      "description_zh": "初始化选中页签的 key，如果没有设置 activeTabKey"
+    },
+    "extra": {
+      "default": "-",
+      "value": "",
+      "type": "string|slot",
+      "description": "Content to render in the top-right corner of the card",
+      "description_zh": "卡片右上角的操作区域"
+    },
+    "hoverable": {
+      "default": "false",
+      "value": "",
+      "type": "boolean",
+      "description": "Lift up when hovering card",
+      "description_zh": "鼠标移过时可浮起"
+    },
+    "loading": {
+      "default": "false",
+      "value": "",
+      "type": "boolean",
+      "description": "Shows a loading indicator while the contents of the card are being fetched",
+      "description_zh": "当卡片内容还在加载中时，可以用 loading 展示一个占位"
+    },
+    "tabList": {
+      "default": "-",
+      "value": "",
+      "type": "Array<{key: string, tab: any, scopedSlots: {tab: 'XXX'}}>",
+      "description": "List of TabPane's head, Custom tabs can be created with the scopedSlots property",
+      "description_zh": "页签标题列表, 可以通过 scopedSlots 属性自定义 tab"
+    },
+    "tabBarExtraContent": {
+      "default": "无",
+      "value": "",
+      "type": "slot",
+      "description": "Extra content in tab bar",
+      "description_zh": "tab bar 上额外的元素"
+    },
+    "size": {
+      "default": "default",
+      "value": [
+        "default",
+        "small"
+      ],
+      "type": "default | small",
+      "description": "Size of card",
+      "description_zh": "card 的尺寸"
+    },
+    "title": {
+      "default": "-",
+      "value": "",
+      "type": "string|slot",
+      "description": "Card title",
+      "description_zh": "卡片标题"
+    },
+    "type": {
+      "default": "-",
+      "value": "",
+      "type": "string",
+      "description": "Card style type, can be set to inner or not set",
+      "description_zh": "卡片类型，可设置为 inner 或 不设置"
+    }
+  },
+  "methods": [],
+  "events": [
+    {
+      "name": "tabChange",
+      "description": "Callback when tab is switched",
+      "params": "(key) => void",
+      "description_zh": "页签切换的回调"
+    }
+  ],
+  "suggestions": ["a-card-meta"],
+  "link": "https://1x.antdv.com/components/card",
+  "link_zh": "https://1x.antdv.com/components/card-cn"
+}

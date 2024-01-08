@@ -1,0 +1,111 @@
+{
+  "name": "AAnchor",
+  "props": {
+    "affix": {
+      "value": "",
+      "description": "Fixed mode of Anchor",
+      "default": "true",
+      "type": "boolean",
+      "description_zh": "固定模式"
+    },
+    ":bounds": {
+      "value": "",
+      "description": "Bounding distance of anchor area",
+      "default": "5(px)",
+      "type": "number",
+      "description_zh": "锚点区域边界"
+    },
+    ":getContainer": {
+      "value": "",
+      "description": "Scrolling container",
+      "default": "() => window",
+      "type": "() => HTMLElement",
+      "description_zh": "指定滚动的容器"
+    },
+    ":getCurrentAnchor": {
+      "value": "",
+      "description": "Customize the anchor highlight",
+      "default": "-",
+      "type": "() => string",
+      "description_zh": "自定义高亮的锚点"
+    },
+    ":offsetBottom": {
+      "value": "",
+      "description": "Pixels to offset from bottom when calculating position of scroll",
+      "default": "",
+      "type": "number",
+      "description_zh": "距离窗口底部达到指定偏移量后触发"
+    },
+    ":offsetTop": {
+      "value": "",
+      "description": "Pixels to offset from top when calculating position of scroll",
+      "default": "0",
+      "type": "number",
+      "description_zh": "距离窗口顶部达到指定偏移量后触发"
+    },
+    "showInkInFixed": {
+      "value": "",
+      "description": "Whether show ink-balls in Fixed mode",
+      "default": "false",
+      "type": "boolean",
+      "description_zh": "固定模式是否显示小圆点"
+    },
+    ":targetOffset": {
+      "value": "",
+      "description": "Anchor scroll offset, the default is the same as offsetTop, [example](#components-anchor-demo-targetoffset)",
+      "default": "offsetTop",
+      "type": "number",
+      "description_zh": "锚点滚动偏移量，默认与 offsetTop 相同，[例子](#components-anchor-demo-targetoffset)"
+    },
+    "wrapperClass": {
+      "value": "",
+      "description": "The class name of the container",
+      "default": "-",
+      "type": "string",
+      "description_zh": "容器的类名"
+    },
+    ":wrapperStyle": {
+      "value": "",
+      "description": "Container style",
+      "default": "-",
+      "type": "object",
+      "description_zh": "容器样式"
+    }
+  },
+  "methods": [],
+  "typeDetail": {
+    "AnchorItem": [
+      {
+        "name": "href",
+        "description": "锚点链接",
+        "type": "string"
+      },
+      {
+        "name": "target",
+        "description": "该属性指定在何处显示链接的资源。",
+        "type": "string"
+      },
+      {
+        "name": "title",
+        "description": "文字内容",
+        "type": "VueNode | (item: AnchorItem) => VueNode"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "change",
+      "description": "Listening for anchor link change",
+      "params": "(currentActiveLink: string) => void",
+      "description_zh": "监听锚点链接改变"
+    },
+    {
+      "name": "click",
+      "description": "set the handler to handle click event",
+      "params": "Function(e: MouseEvent, link: Object)",
+      "description_zh": "click 事件的 handler"
+    }
+  ],
+  "link": "https://1x.antdv.com/components/anchor",
+  "link_zh": "https://1x.antdv.com/components/anchor-cn"
+}

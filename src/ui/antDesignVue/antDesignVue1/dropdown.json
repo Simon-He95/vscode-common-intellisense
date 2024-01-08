@@ -1,0 +1,90 @@
+{
+  "name": "ADropdown",
+  "props": {
+    "disabled": {
+      "default": "false",
+      "value": "",
+      "type": "boolean",
+      "description": "whether the dropdown menu is disabled",
+      "description_zh": "菜单是否禁用"
+    },
+    "destroyPopupOnHide": {
+      "default": "false",
+      "value": "",
+      "type": "boolean",
+      "description": "Whether destroy dropdown when hidden",
+      "description_zh": "关闭后是否销毁 Dropdown"
+    },
+    "getPopupContainer": {
+      "default": "() => document.body",
+      "value": "",
+      "type": "Function(triggerNode)",
+      "description": "to set the container of the dropdown menu. The default is to create a `div` element in `body`, you can reset it to the scrolling area and make a relative reposition. example",
+      "description_zh": "菜单渲染父节点。默认渲染到 body 上，如果你遇到菜单滚动定位问题，试试修改为滚动的区域，并相对其定位。"
+    },
+    "overlay(slot-scope)": {
+      "default": "-",
+      "value": "",
+      "type": "Menu",
+      "description": "the dropdown menu",
+      "description_zh": "菜单"
+    },
+    "overlayClassName": {
+      "default": "-",
+      "value": "",
+      "type": "string",
+      "description": "Class name of the dropdown root element",
+      "description_zh": "下拉根元素的类名称"
+    },
+    ":overlayStyle": {
+      "default": "-",
+      "value": "",
+      "type": "object",
+      "description": "Style of the dropdown root element",
+      "description_zh": "下拉根元素的样式"
+    },
+    "placement": {
+      "default": "bottomLeft",
+      "value": [
+        "bottomLeft",
+        "bottomCenter",
+        "bottomRight",
+        "topLeft",
+        "topCenter",
+        "topRight"
+      ],
+      "type": "String",
+      "description": "placement of pop menu: bottomLeft bottomCenter bottomRight topLeft topCenter topRight",
+      "description_zh": "菜单弹出位置：bottomLeft bottomCenter bottomRight topLeft topCenter topRight"
+    },
+    "trigger": {
+      "default": "['hover']",
+      "value": [
+        "click",
+        "hover",
+        "contextmenu"
+      ],
+      "type": "Array<click|hover|contextmenu>",
+      "description": "the trigger mode which executes the drop-down action, hover doesn't work on mobile device",
+      "description_zh": "触发下拉的行为, 移动端不支持 hover"
+    },
+    "v-model": {
+      "default": "false",
+      "value": "",
+      "type": "boolean",
+      "description": "whether the dropdown menu is visible",
+      "description_zh": "菜单是否显示"
+    }
+  },
+  "methods": [],
+  "events": [
+    {
+      "name": "visibleChange",
+      "description": "a callback function takes an argument: visible, is executed when the visible state is changed",
+      "params": "function(visible)",
+      "description_zh": "菜单显示状态改变时调用，参数为 visible"
+    }
+  ],
+  "link": "https://1x.antdv.com/components/dropdown",
+  "link_zh": "https://1x.antdv.com/components/dropdown-cn"
+}

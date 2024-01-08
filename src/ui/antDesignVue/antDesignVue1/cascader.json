@@ -1,0 +1,231 @@
+{
+  "name": "ACascader",
+  "props": {
+    "allowClear": {
+      "default": "true",
+      "value": "",
+      "type": "boolean",
+      "description": "whether allow clear",
+      "description_zh": "是否支持清除"
+    },
+    "autoFocus": {
+      "default": "false",
+      "value": "",
+      "type": "boolean",
+      "description": "get focus when component mounted",
+      "description_zh": "自动获取焦点"
+    },
+    "changeOnSelect": {
+      "default": "false",
+      "value": "",
+      "type": "boolean",
+      "description": "change value on each selection if set to true, see above demo for details",
+      "description_zh": "当此项为 true 时，点选每级菜单选项值都会发生变化，具体见上面的演示"
+    },
+    "defaultValue": {
+      "default": "[]",
+      "value": "",
+      "type": "string[] | number[]",
+      "description": "initial selected value",
+      "description_zh": "默认的选中项"
+    },
+    "disabled": {
+      "default": "false",
+      "value": "",
+      "type": "boolean",
+      "description": "whether disabled select",
+      "description_zh": "禁用"
+    },
+    "displayRender": {
+      "default": "labels => labels.join(' / ')",
+      "value": "",
+      "type": "({labels, selectedOptions}) => vNode",
+      "description": "render function of displaying selected options, you can use slot=\"displayRender\" and slot-scope=\"{labels, selectedOptions}\"",
+      "description_zh": "选择后展示的渲染函数,可使用 slot=\"displayRender\" 和 slot-scope=\"{labels, selectedOptions}\""
+    },
+    "expandTrigger": {
+      "default": "'click'",
+      "value": [
+        "click",
+        "hover"
+      ],
+      "type": "string",
+      "description": "expand current item when click or hover, one of 'click' 'hover'",
+      "description_zh": "次级菜单的展开方式，可选 'click' 和 'hover'"
+    },
+    ":fieldNames": {
+      "default": "{ label: 'label', value: 'value', children: 'children' }",
+      "value": "",
+      "type": "object",
+      "description": "custom field name for label and value and children",
+      "description_zh": "自定义 options 中 label name children 的字段"
+    },
+    "getPopupContainer": {
+      "default": "() => document.body",
+      "value": "",
+      "type": "Function(triggerNode)",
+      "description": "Parent Node which the selector should be rendered to. Default to body. When position issues happen, try to modify it into scrollable content and position it relative.",
+      "description_zh": "菜单渲染父节点。默认渲染到 body 上，如果你遇到菜单滚动定位问题，试试修改为滚动的区域，并相对其定位。"
+    },
+    "loadData": {
+      "default": "-",
+      "value": "",
+      "type": "(selectedOptions) => void",
+      "description": "To load option lazily, and it cannot work with showSearch",
+      "description_zh": "用于动态加载选项，无法与 showSearch 一起使用"
+    },
+    "notFoundContent": {
+      "default": "'Not Found'",
+      "value": "",
+      "type": "string",
+      "description": "Specify content to show when no result matches.",
+      "description_zh": "当下拉列表为空时显示的内容"
+    },
+    ":options": {
+      "default": "-",
+      "value": "",
+      "type": "object",
+      "description": "data options of cascade",
+      "description_zh": "可选项数据源"
+    },
+    "placeholder": {
+      "default": "'请选择'",
+      "value": "",
+      "type": "string",
+      "description": "input placeholder",
+      "description_zh": "输入框占位文本"
+    },
+    "popupClassName": {
+      "default": "-",
+      "value": "",
+      "type": "string",
+      "description": "additional className of popup overlay",
+      "description_zh": "自定义浮层类名"
+    },
+    ":popupStyle": {
+      "default": "{}",
+      "value": "",
+      "type": "object",
+      "description": "additional style of popup overlay",
+      "description_zh": "自定义浮层样式"
+    },
+    "popupPlacement": {
+      "default": "bottomLeft",
+      "value": [
+        "bottomLeft",
+        "bottomRight",
+        "topLeft",
+        "topRight"
+      ],
+      "type": "string",
+      "description": "use preset popup align config from builtinPlacements：bottomLeft bottomRight topLeft topRight",
+      "description_zh": "浮层预设位置：bottomLeft bottomRight topLeft topRight"
+    },
+    "popupVisible": {
+      "default": "false",
+      "value": "",
+      "type": "boolean",
+      "description": "set visible of cascader popup",
+      "description_zh": "控制浮层显隐"
+    },
+    "showSearch": {
+      "default": "false",
+      "value": "",
+      "type": "boolean",
+      "description": "Whether show search input in single mode.",
+      "description_zh": "在选择框中显示搜索框"
+    },
+    "size": {
+      "default": "default",
+      "value": [
+        "large",
+        "default",
+        "small"
+      ],
+      "type": "string",
+      "description": "input size, one of large default small",
+      "description_zh": "输入框大小，可选 large default small"
+    },
+    ":suffixIcon": {
+      "default": "-",
+      "value": "",
+      "type": "string | VNode | slot",
+      "description": "The custom suffix icon",
+      "description_zh": "自定义的选择框后缀图标"
+    },
+    "v-model": {
+      "default": "-",
+      "value": "",
+      "type": "string[] | number[]",
+      "description": "selected value",
+      "description_zh": "指定选中项",
+      "required": true
+    }
+  },
+  "methods": [
+    {
+      "name": "blur",
+      "description": "Remove the focus",
+      "params": "",
+      "description_zh": "移除焦点"
+    },
+    {
+      "name": "focus",
+      "description": "Get focus",
+      "params": "",
+      "description_zh": "获取焦点"
+    }
+  ],
+  "events": [
+    {
+      "name": "change",
+      "description": "callback when finishing cascader select",
+      "params": "`(value, selectedOptions) => void`",
+      "description_zh": "选择完成后的回调"
+    },
+    {
+      "name": "popupVisibleChange",
+      "description": "callback when popup shown or hidden",
+      "params": "`(value) => void`",
+      "description_zh": "显示/隐藏浮层的回调"
+    },
+    {
+      "name": "search",
+      "description": "callback when input value change",
+      "params": "`(value) => void`",
+      "description_zh": "输入框变化时的回调"
+    }
+  ],
+  "typeDetail": {
+    "showSearch": [
+      {
+        "name": "filter",
+        "description": "接收 `inputValue` `path` 两个参数，当 `path` 符合筛选条件时，应返回 true，反之则返回 false。",
+        "type": "function(inputValue, path): boolean"
+      },
+      {
+        "name": "limit",
+        "description": "搜索结果展示数量",
+        "type": "number | false",
+        "default": "50"
+      },
+      {
+        "name": "matchInputWidth",
+        "description": "搜索结果列表是否与输入框同宽",
+        "type": "boolean"
+      },
+      {
+        "name": "render",
+        "description": "用于渲染 filter 后的选项,可使用 #showSearchRender=\"{inputValue, path}\"",
+        "type": "function({inputValue, path}): VNode"
+      },
+      {
+        "name": "sort",
+        "description": "用于排序 filter 后的选项",
+        "type": "function(a, b, inputValue)"
+      }
+    ]
+  },
+  "link": "https://1x.antdv.com/components/cascader",
+  "link_zh": "https://1x.antdv.com/components/cascader-cn"
+}
