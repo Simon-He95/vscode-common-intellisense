@@ -1,0 +1,69 @@
+{
+  "name": "NFlex",
+  "props": {
+    "align": {
+      "value": [
+        "start",
+        "end",
+        "center",
+        "baseline",
+        "stretch"
+      ],
+      "description": "Vertically arranged",
+      "default": "undefined",
+      "type": "start / end / center / baseline / stretch",
+      "description_zh": "垂直排列方式"
+    },
+    "inline": {
+      "value": "",
+      "description": "Whether it is an inline element",
+      "default": "false",
+      "type": "boolean",
+      "description_zh": "是否为行内元素"
+    },
+    "justify": {
+      "value": [
+        "start",
+        "end",
+        "center",
+        "space-around",
+        "space-between",
+        "space-evenly"
+      ],
+      "description": "Arrange it horizontally",
+      "default": "start",
+      "type": "start / end / center / space-around / space-between / space-evenly",
+      "description_zh": "水平排列方式"
+    },
+    "size": {
+      "value": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "description": "When it is a number, it is the horizontal and vertical spacing; For arrays, it is [horizontal spacing, vertical spacing]",
+      "default": "medium",
+      "type": "small / medium / large / number / [number, number]",
+      "description_zh": "为数字时，是水平和垂直间距；为数组时，是 [水平间距, 垂直间距]"
+    },
+    "vertical": {
+      "value": "",
+      "description": "Whether it is vertically laid out",
+      "default": "false",
+      "type": "boolean",
+      "description_zh": "是否垂直布局"
+    },
+    "wrap": {
+      "value": "",
+      "description": "Whether or not to break the line",
+      "default": "true",
+      "type": "boolean",
+      "description_zh": "是否超出换行"
+    }
+  },
+  "methods": [],
+  "typeDetail": {},
+  "events": [],
+  "link": "https://www.naiveui.com/en-US/dark/components/flex",
+  "link_zh": "https://www.naiveui.com/zh-CN/dark/components/flex"
+}

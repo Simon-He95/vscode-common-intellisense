@@ -33,6 +33,7 @@ import dataTable from './dataTable.json'
 import form from './form.json'
 import formItem from './formItem.json'
 import formItemGi from './formItemGi.json'
+import flex from './flex.json'
 import tabs from './tabs.json'
 import tab from './tab.json'
 import tabPane from './tabPane.json'
@@ -120,6 +121,7 @@ export function naiveUi2() {
     form,
     formItem,
     formItemGi,
+    flex,
     tabs,
     tab,
     tabPane,
@@ -406,6 +408,12 @@ Definitely Maybe
   <n-button>Oops!</n-button>
   <n-button>Long! Long! Cross the line!</n-button>
 </n-space>`],
+        [flex, '弹性布局', `<n-flex>
+  <n-button>Oops!</n-button>
+  <n-button>Oops!</n-button>
+  <n-button>Oops!</n-button>
+  <n-button>Long! Long! Cross the line!</n-button>
+</n-flex>`],
         [spin, '加载', '<n-spin size="small" />'],
         [statistic, '统计数据', '<n-statistic label="统计数据" :value="99"></n-statistic'],
         [steps, '步骤', `<n-steps
